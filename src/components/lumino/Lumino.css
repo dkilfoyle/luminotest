@@ -16,6 +16,7 @@
   flex: 1 1 auto;
   height: calc(100vh - 48px);
   padding: 8px;
+  background: red;
 }
 
 #palette {
@@ -32,8 +33,24 @@
   padding: 8px;
   border: 1px solid #c0c0c0;
   border-top: none;
+  background: blue;
+}
+
+.p-TabBar-tab,
+.lm-TabBar-tab {
+  background: rgba(243, 244, 246);
+  min-height: 23px;
+  max-height: 23px;
+}
+
+.p-TabBar-tab.p-mod-current,
+.lm-tabBar-tab.lm-mod-current {
+  min-height: 24px;
+  max-height: 24px;
+  transform: translate(0px, 1px);
   background: white;
 }
+/* 
 
 .p-DockPanel-handle,
 .lm-DockPanel-handle {
@@ -76,4 +93,4 @@
   transition-property: top, left, right, bottom;
   transition-duration: 150ms;
   transition-timing-function: ease;
-}
+} */
